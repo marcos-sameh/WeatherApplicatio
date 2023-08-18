@@ -1,0 +1,15 @@
+body{
+    background-image: url("../weather/64x64/banner.png");
+    background-repeat: no-repeat;
+    background-color: #262936;
+}
+input#search{
+    color: gray;
+    background-color: #262936 ;
+}
+ 
+.card{
+    background-color: #323544;
+    color: #bfc1c8;
+    height: 300px;
+}

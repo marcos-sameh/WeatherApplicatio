@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../weather/64x64/logo.png">
+</head>
+ <body>
+    <h1 class="text-center my-3 text-white fw-bolder">Weather Application</h1>
+    
+
+<sectionc id="search-bg" class="">
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-10 mx-auto position-relative mt-4 ">
+                <input type="text" id="search"   class="form-control text-white-50 p-3  text-white rounded-pill position-relative top-50 translate-middle-y" value="">
+            </div> 
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container mt-5">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <div class="card" >
+                    <div class="card-header">
+                         <span id="today-name-of-day"></span>
+                         <span class="float-end">
+                            <span id="today-number-of-day"></span>
+                            <span id="today-number-of-month"></span>
+
+                         </span>
+                        
+                      </div>
+                    <div class="card-body">
+                        <span id="today-location" class="d-block"></span>
+                         
+                            <span class="display-2 my-2 text-white fw-bolder">
+                                <span id="today-temp"></span>
+                                <span><sup>o</sup>c</span>
+                            </span>
+                             <img id="today-img" class="float-end" alt="">
+                         
+                        <span id="today-text" class="d-block"></span>
+                     </div>
+                    <div class="card-footer fs-6 d-flex justify-content-between p-2">
+                     <div class="d-flex">
+                        <!-- <img class="mx-1" src="../weather/64x64/icon-wind.png"  alt=""> -->
+                       <span>humidity : </span> <p id="humidity"></p>
+                     </div>
+                     <div class="d-flex">
+                        <!-- <img class="footer-icons mx-1" src="../weather/64x64/icon-umberella.png" alt=""> -->
+                       <span>wind : </span>  <p id="wind"></p>
+                     </div>
+                     <div class="d-flex">
+                        <!-- <img class="footer-icons mx-1" src="../weather/64x64/icon-compass.png" alt=""> -->
+                        <span>wind-direction : </span> <p id="wind-direction"></p>
+                     </div>
+ 
+                      </div>
+                </div>
+            </div>
+            <!-- tomorrow temp -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                         <span class="next-name-of-day">Sunday</span>
+                      </div>
+                    <div class="card-body">
+                        <img class="next-img" src="" alt="">
+                         
+                            <span class="d-block fs-1 fw-bolder">
+                                <span class="next-max-temp">20</span>
+                                <span><sup>o</sup>c</span>
+                            </span>
+                            <span class="fs-5">
+                                <span class="next-min-temp">20</span>
+                                <span><sup>o</sup>c</span>
+                            </span>
+                         
+                        <p class="next-text" class="d-block"> sunny</p>
+                     </div>
+                   
+                </div>
+            </div>
+
+            <!-- After tomorrow -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                         <span class="next-name-of-day">Sunday</span>
+                      </div>
+                    <div class="card-body">
+                         
+                        <img class="next-img" src="" alt="">
+
+                            <span class="d-block fs-1 fw-bolder">
+                                <span class="next-max-temp">20</span>
+                                <span><sup>o</sup>c</span>
+                            </span>
+                            <span class="fs-5">
+                                <span class="next-min-temp">20</span>
+                                <span><sup>o</sup>c</span>
+                            </span>
+                         
+                        <p class="next-text" class="d-block"> sunny</p>
+                     </div>
+                   
+                </div>
+            </div>
+
+             
+        </div>
+    </div>
+</section>
+<footer class="text-center py-2">
+     <p class="lead text-white fs-1 text-capitalize my-3">welcome to our weather application </p>
+</footer>
+
+    
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+ </body>
+  
+ </html>
